@@ -2,9 +2,9 @@
 
 
 ### SPARQL ENDPOINT
-The KG is available at the url: https://kgccc.di.unito.it/sparql/yiddish-writers-kg
+The knowledge graph is available at the url: https://kgccc.di.unito.it/sparql/yiddish-writers-kg
 
-### SPARQL QUEQRY EXAMPLE
+### SPARQL QUERY EXAMPLE
 
 
 find all the triples of all the authors
@@ -25,7 +25,7 @@ WHERE {
     ?c rdfs:label ?event .
     ?b rdfs:label ?entity .
     
-    ?a ?c ?b .
+    ?a ?b ?c.
   } 
 }
 

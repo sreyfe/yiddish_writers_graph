@@ -9,7 +9,7 @@ The KG is available at the url: https://kgccc.di.unito.it/sparql/yiddish-writers
 
 find all the triples of all the authors
 
-'''
+```
 PREFIX pim: <https://purl.archive.org/people-in-the-media#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
@@ -23,5 +23,4 @@ WHERE { GRAPH <https://kgccc.di.unito.it/sparql/yiddish-writers-kg> {
 
 } 
 }
-
-'''
+```

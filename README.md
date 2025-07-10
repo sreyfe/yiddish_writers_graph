@@ -16,11 +16,17 @@ PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 
 SELECT DISTINCT *
 FROM NAMED <https://kgccc.di.unito.it/sparql/yiddish-writers-kg>
-WHERE { GRAPH <https://kgccc.di.unito.it/sparql/yiddish-writers-kg> {
-?sit a pim:BiographicalSituation; dul:isSettingFor ?a, ?b, ?c .
-?a ?b ?c .
-?a rdfs:label ?author_label .
+WHERE { 
+  GRAPH <https://kgccc.di.unito.it/sparql/yiddish-writers-kg> {
+    ?sit a pim:BiographicalSituation ;
+         dul:isSettingFor ?a, ?b, ?c .
 
-} 
+    ?a rdfs:label ?author_label .
+    ?c rdfs:label ?event .
+    ?b rdfs:label ?entity .
+    
+    ?a ?c ?b .
+  } 
 }
+
 ```
